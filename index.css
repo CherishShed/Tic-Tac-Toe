@@ -20,17 +20,17 @@ h1{
 h2 {
     font-size: 3.5rem;
     text-align: center;
-    color: green;
+    color: black;
     font-family:Arial, sans-serif;
 }
 .container-fluid{
     /* position: fixed; */
     width: 50%;
     height: 60vh;
-    margin-top: 3%;
+    margin-top: 30px;
     padding: 0;
     backdrop-filter: blur(5px);
-    background-color: rgba(222, 184, 135, 0.4);
+    background-color: rgba(153, 114, 62, 0.4);
     
 }
 
@@ -44,13 +44,20 @@ h2 {
 .col-4{
     border: 5px solid black;
     font-size: 6rem;
+    font-weight: bold;
     font-family: cursive;
-    text-align: center;  
+    text-align: center; 
+    color: white; 
 }
 
+.instruction{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
 .btn{
     margin-left: 45%;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: chocolate;
     font-size: 100%;
     color: white;

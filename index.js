@@ -1,7 +1,7 @@
 var currentLetter = "";
 var clickCount = 0;
 var gameOn = true;
-
+var nextLetter = ""
 
 $(".col-4").click((e) => {
     if (gameOn) {
@@ -11,9 +11,12 @@ $(".col-4").click((e) => {
             clickCount++;
             if (clickCount % 2 === 0) {
                 currentLetter = "O";
+                nextLetter = "X";
             } else {
                 currentLetter = "X";
+                nextLetter = "O";
             }
+            $("h2").text(`${nextLetter}'s Turn`);
             $(e.target).text(currentLetter);
             for (x of boxes) {
                 clickprogression.push($(x).text())
@@ -75,7 +78,8 @@ $(".btn").click(() => {
     currentLetter = "";
     clickCount = 0;
     gameOn = true;
-    $("h2").text("");
+    $("h2").css("color", "black")
+    $("h2").text("X Goes First");
     for (x of $(".box")) {
         $(x).text("");
     }
