@@ -42,7 +42,7 @@ const checkWinner = (arr) => {
         else if ((i == 0 | i == 3 | i == 6) && arr[i] == arr[i + 1] && arr[i] == arr[i + 2]) {
             winnerText(arr[i])
         }
-        else if (i == 0 || i == 2) {
+        else if (i == 0 | i == 2) {
             switch (i) {
                 case 0:
                     if (arr[i] == arr[4] && arr[i] == arr[8]) {
